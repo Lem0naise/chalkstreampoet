@@ -6,15 +6,19 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://planetperil.com.com/</loc>
+  <loc>http://chalkstreampoet.net</loc>
   <lastmod>2022-01-23T22:31:51+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://planetperil.com/index.html</loc>
+  <loc>http://chalkstreampoet.net/index.html</loc>
   <lastmod>2022-01-23T22:31:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://chalkstreampoet.net</loc>
+  <lastmod>2022-01-23T22:31:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
