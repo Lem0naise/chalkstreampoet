@@ -27,8 +27,7 @@ html {
     margin-top: -10%;
     width: 100vw;
     height: 120vh;
-    background-image: url("imgs/Chalk3.jpeg");  
-    background-size: cover;
+    object-fit: cover;
     filter:brightness(0.7);
     transition: filter 1s;
 }
