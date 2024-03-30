@@ -4,147 +4,103 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Planet in Peril</title>
-		<meta name="description" content="Planet in Peril - Environment climate workshop for schools in the UK"/>
-		<meta name="keywords" content="Planet in Peril, Planet Peril, Climate, Environment, Workshop"/>
-		<meta name="author" content="Zac Nolan"/>
+        <title>Chalk Stream Poets</title>
+		<meta name="description" content="Chalk stream poet competition"/>
+		<meta name="keywords" content="Chalk stream, poetry, Climate, Environment, Workshop"/>
+		<meta name="author" content="Indy Nolan"/>
     </head>
     <body>
-        <div>
 
+        <div id="background"></div>
 
-        <div class = "title">
-            <p class ="big">
-            <img src="earth.webp"><span id="b">Planet </span><span class="tiny">in </span><span id="a">Peril!</span></p> 
+        <div id = "splash">
+            <div class = 'option' id = 'op_personal' onclick="personal()">
+                <img src="imgs/person.svg">
+                <br/>
+                <br/>
+                I'm an individual
+            </div>
+            <div class = 'option' id = 'op_school' onclick="school()">
+                <img src="imgs/school.svg">
+                <br/>
+                <br/>
+                I'm a teacher
+            </div>
         </div>
-        <div id="about">
-            
-            <div class="para">
-                <div class = "subsub small">
-                    <div class="subdivider_p">What We Offer</div>
-                    Planet in Peril provides workshops for schools giving children a series of thought-provoking toys, games, and interactive displays which will set them pondering on
-                    </br>
-                    <ul>
-                        <li>What is happening to our biodiversity,</li>
-                        <li>The implications of this for humans, and</li>
-                        <li>What we can do to help prevent it.</li>
-                    </ul>
-                    <br/>
-                    As the challenges of the climate crisis become ever clearer, we are also facing a biodiversity crisis. Population of mammals have declined by 56%, birds by 54%, insects by 54%, and fishes by 41% over the last 50 years. At least 10,000 species are going extinct each year.
-                </div>
-                <div class="splash">
-                    <img src="perils1.webp">
-                </div>
+
+        <div id="personal">
+        
+            <div class = "subsub small">
+                <div class="subdivider_p">Chalk Streams</div>
+
+                <br/>
+                Chalk Streams are one of Earth's rarest habitats and almost all of them are found in England.  Of the 260 true chalk streams on Earth, 224 of them flow from underground chalk aquifers in a band across eastern and southern England. 
+                <br/><br/>
+                Celebrated in books and paintings for their crystal-clear water and rich plant and animal life (dragonflies, otters, kingfishers, water voles, flag iris, and watercress), for many people chalk streams are the quintessential image of the English countryside. 
+                <br/><br/>
+                Now, however, our chalk streams are in deep trouble. Threatened with over-abstraction of their water, increasingly severe heatwaves and summer droughts, together with pollution from water companies and industrial agriculture, many chalk streams are now unrecognisable - flowing thick and brown with sediment, or dried up, with plummeting numbers of plant and animal species. 
+                <br/><br/>
+                <b>
+                Can you help by becoming their champion? Write a poem about chalk streams and become the Chalk Stream Poet Laureate. We are looking for two - one young, one older! </b>
+                <br/>
+                <br/>
+                <br/>
+                <i class="details">
+                    The Chalk Streams (Protection) Bill is being brought as a Private Member's Bill to the House of Commons by Sarah Green, MP for Chesham and Amersham. It aims to provide specific additional protection for chalk streams from pollution, abstraction and other forms of environmental damage. It will be heard on Friday 21st June. Thinking about chalk streams, talking about them, and letting your MP know that this is an issue you care about, will help to support this Bill become legislation. 
+                </i>
             </div>
-    
+
+            <br/>
+            <div class = "subsub small" id="personal_flip">
+                <div class="subdivider_p">How To Enter</div>
+                <br/>
+                You can submit as many poems as you wish.
+                <br/><br/>
+                The closing date is <b>Friday 31st May 2024.</b>
+                <br/><br/>
+                There will be medals to be won!
+                <br/><br/>
+
+                <form id='poem_form'>
+                    <h2>Submit a poem for a chance to become the Poet Laureate!</h1>
+                    <div style="width: 100%;">
+                        <label for="under18">
+                            <input type="radio" id="under18" name="age" value="Under 18">
+                        Under 18</label>
+                        <label for="over18">
+                            <input type="radio" id="over18" name="age" value="Over 18">
+                        Over 18</label><br/><br/>
+                    </div>
+                    
+                    <input type="text" name="name" placeholder="Name, Age">
+                    <p>Poem</p>
+                    <textarea name="poem" rows="9"></textarea>
+                    <br/>
+                    <button id="submit_email" type="submit">Send Email </button>
+                </form></br><br/>
+                <i class="details">If the form is not working, simply email your details and your poem to <b><a style="color:aliceblue" href="mailto:chalkstreampoem@gmail.com">chalkstreampoet@gmail.com</a></b>. </i>
+                <i class="details">By submitting your poem you consent to it being published here and in other subsequent material, always credited to you. </i>
+            </div>
+
+            <div class = "subsub small" id="school_flip">
+                <div class="subdivider_p">How To Run The Competition</div>
+                <br/>
+                <br/>
+                Do you have a chalk stream nearby? If so, why not focus on writing poems about that particular stream. 
+                <br/><br/>
+                If not, imagine what you might like to do beside the perfect stream or river - swim? Kayak? Paddle? Picnic? Sketch? Or perhaps … nothing at all.
+                <br/><br/>
+                Perhaps you will be inspired to write a poem about a particular fish or insect or flower that is part of the chalk stream ecosystem: a heron, or a water beetle…
+                <br/><br/>
+                If you would like more information so that you can run this as a whole-school competition or as a homework activity, please email <b><a style="color:aliceblue" href="mailto:chalkstreampoem@gmail.com">chalkstreampoet@gmail.com</a></b>.
+                <br/><br/>
+                A set of powerpoint slides and a competition flyer are available for you to download here for you to adapt and use as you see fit. 
+                <br/><br/>
+                <b><a style='color: aliceblue' href="imgs/Chalk Stream Poet Laureate school slides.pptx">Download the PowerPoint</a></b>
+            </div>
+
         </div>
-        </div>
-        <div id = "book">
-            <div class = "titlebar"><p>Activities</p><p id="subtext">Click the activities for images!</p>
-            </div>
 
-            <div id="price">
-                <div><p class="t">Cost</p><button onclick="window.open('mailto:daleandjuliet@talktalk.net?subject=Planet in Peril Workshop', '_self')">Book Now</button></div>
-                <div><p style='font-weight: bold; margin:0;'>£100 per session
-                    <br/>
-                    (flexible timings to suit your needs: 1 to 2 hours)</p>
-                    <br/>
-                    £50 from each booking goes to a project in Uganda helping schools to power themselves with solar panels and environmentally friendly boilers as an alternative to cutting trees for firewood.  <br/><br/>
-                    <a href="http://vashgreenschools.org/" style="color:aliceblue" target="_blank">http://vashgreenschools.org</a></div>
-                
-            </div>
-            <div id="pics" onclick="undo()"></div>
-            <div id="items">
-                <div class = "item" onclick="openpics(['aweandwonder1.jpg', 'aweandwonder2.jpg'])">
-                    <div class="tit">
-                        <p class="t">Game of Awe and Wonder</p> <img src="imgs/icons/PiP Jenga.png">
-                    </div>
-                    <p class="p">
-                        Our ecosystem is an intricate web of connections between prey and predator, plants, animals, fungi - and of course humans too. Tug the web by removing one species, and the consequences will be devastating for other species too. Like a giant game of jenga, if one block is removed, others may come unexpectedly tumbling down.<br/><br/>
-                        Each block is hand-painted with eight animals or plants. An accompanying booklet contains interesting facts on each species.<br/><br/>
-                        Which insects or fungi have you heard of?<br/>
-                        Do you know if they are endangered or not?<br/>
-                        Where do they live?<br/>
-                        What would you like to find out about them?
-                    </p>
-                </div>
-
-
-                <div class = "item" onclick="openpics(['oil.jpg'])">
-                    <div class="tit">
-                        <p class="t">Oilpipes and Rainbows</p> <img src="imgs/icons/PiP Dice.png">
-                    </div>
-                    <p class="p">
-                        Loosely based on Snakes and Ladders, this game is equally frustrating! Players move towards either a hotter, more damaged Earth, or a cooler, pleasant Earth, encountering different government and corporate policies along the way.   
-                        <br/><br/>
-                        A fun introduction to the idea that government and business decisions are crucial to helping our environment alongside the individual actions which children are more familiar with.
-                    </p>
-                </div>
-
-                <div class = "item" onclick="openpics(['warming.jpg'])">
-                    <div class="tit">
-                        <p class="t">Warming Stripes</p> <img src="imgs/icons/PiP Warming stripes.png">
-                    </div>
-          
-                    <p class='p' style="font-style:italic;">
-                        “No words. No numbers. No graphs. Just a series of vertical coloured bars, showing the progressive heating of our planet in a single, striking image. The warming stripes show clearly and vividly how global average temperatures have risen over nearly two centuries.” </p>          <p class="p">Professor Ed Hawkins, University of Reading.  
-                        <br/><br/>
-                        The warming stripes are an image that children will become increasingly familiar with - it's even being worm by Reading FC as part of their football kit - but do they know exactly what the stripes mean?
-                        <br/><br/>
-                        this activity will help them to understand and to explain the graphic, and they can also explpore Warming Stripes for different cities or countries using the University of Reading website.
-                    </p>
-                </div>
-
-                <div class = "item" onclick="openpics(['apron.jpg'])">
-                    <div class="tit">
-                        <p class="t">The Name Game</p> <img src="imgs/icons/PiP Guess what.png">
-                    </div>
-                    <p class="p">
-                        In a recent study, half the children asked could not identify stinging nettles or bluebells, and only 4 out of 10 could recognise a dandelion. 
-                        <br/><br/>
-                        If you can name something, then in a small way it becomes part of you, and you may be more likely to take notice of it, to care for it. 
-                        <br/><br/>
-                        How many flowers/birds can students initially identify on the apron? After playing a variety of matching card games, can they improve their score? 
-
-                    </p>
-                </div>
-
-                <div class = "item" onclick="openpics(['dom1.jpg', 'dom2.jpg'])">
-                    <div class="tit">
-                        <p class="t">Domino Danger</p> <img src="imgs/icons/PiP Dominoes.png">
-                    </div>
-                    <p class="p">
-                        A map of the world shows 15 crucial aspects of the world's habitats and weather systems, which are known as 'Tipping Points'. If these areas or systems are pushed beyond a certain point then irreversible knock-on changes will be set in motion.<br/><br/>
-                        In the game of Dominio Danger, smaller dominoes get knocked down by each Tipping Point to show the students the real-life impacts on humans and other species.
-                    </p>
-                </div>
-                <div class = "item" onclick="openpics(['question.jpg'])">
-                    <div class="tit">
-                        <p class="t">Question Generator</p> <img src="imgs/icons/PiP question.png">
-                    </div>
-                    <p class="p">
-                        Sometimes it's hard to spark creative questions. Using these fun question generators can stir up ideas!
-                    </p>
-                </div>
-                <div class = "item" onclick="openpics(['museum.jpg'])">
-                    <div class="tit">
-                        <p class="t">Musem of Natural Mysteries</p>
-                    </div>
-                    <p class="p">
-                        Choose an object from the Cabinet of Curious Objects, such as shells, bones or feathers to draw. What questions do the children have about these?
-                    </p>
-                </div>
-            </div>
-            
-
-            <div class = "contact">
-                <div style="margin-top: 50px" class="subsub">
-                    <p class="subtitle">About me</p>
-                    I am a part-time primary school teacher, with experience of teaching both teaching KS1 and KS2, based in SW London. I love to combine the science from my Geography Degree with my passion for art to create games which invite children to think about the beauty of our planet.
-
-                    Contact me at <a href="mailto:daleandjuliet@talktalk.net?subject=Planet In Peril Workshop" style="color:aliceblue">daleandjuliet@talktalk.net</a>.
-                </div>
-            </div>
         </div>        
     </body>
 </html>

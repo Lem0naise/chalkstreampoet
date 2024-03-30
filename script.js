@@ -1,22 +1,31 @@
-function about(){
-    document.getElementById("about").scrollIntoView();
 
+function personal(){
+    document.getElementById("splash").style.display = "none";
+    document.getElementById("personal").style.display = "flex";
+    document.getElementById("personal").style.left = "10vw";
+    document.getElementById("personal").style.opacity = "1";
+    document.getElementById("background").style.filter = "brightness(0.2)"
 }
-function book(){
-    document.getElementById("book").scrollIntoView();
+function school(){
+    document.getElementById("splash").style.display = "none";
+    document.getElementById("personal").style.display = "flex";
+    document.getElementById("personal").style.left = "10vw";
+    document.getElementById("personal").style.opacity = "1";
+    document.getElementById("personal_flip").style.display = "none";
+    document.getElementById("school_flip").style.display = "inline";
+    document.getElementById("background").style.filter = "brightness(0.2)"
 }
-function gallery(){
-    document.getElementById("gallery").scrollIntoView();
-}
-function openpics(pics){
-    document.getElementById("pics").style.display = "flex";
-    document.getElementById("pics").innerHTML = ""; // reset images
-    for (i=0;i<pics.length;i++){
-        let b = document.createElement("img");
-        b.src = "imgs/" + pics[i];
-        document.getElementById("pics").appendChild(b); // add all images
-    }
-}
-function undo(){
-    document.getElementById("pics").style.display = "none";
+
+window.onload = function(){
+    document.getElementById("splash").style.opacity = "1";
+    document.getElementById("background").style.filter = "brightness(0.6)"
+
+    let poemform = document.getElementById("poem_form");
+    poemform.addEventListener("submit", function(event){
+        event.preventDefault();
+        let formData = new FormData(event.target);
+        let formProps = Object.fromEntries(formData);
+        console.log(formProps);
+        window.open(`mailto:chalkstreampoet@gmail.com?subject=Chalk Stream Poem ${formProps['name']}&body= Name: ${formProps['name']} %0D Age:  ${formProps['age']} %0D Poem: %0D  ${formProps['poem']}`)
+    })
 }
