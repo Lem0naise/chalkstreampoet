@@ -70,6 +70,33 @@ html {
     max-height: 30vh;
 }
 
+#judges {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+#judges div {
+    display: flex;
+    align-items: center;
+}
+#judges div p{
+    flex: 0 0 37%;
+    text-align: left;
+}
+#judges div b{
+    font-size: 30px;
+    flex: 0 0 38%;
+    width: 100px;
+    display: flex;
+    
+}
+#judges div img{
+    flex: 0 0 25%;
+    width: calc(80px + 2vw);
+    margin-right: 50px;
+
+}
+
 #personal {
     display: none;
     opacity: 0;
@@ -157,6 +184,15 @@ h2 {
 }
 
 @media only screen and (max-width: 900px) { 
+    #judges div {
+        flex-direction: column;
+        text-align: center;
+    }
+    #judges div img {
+        margin: 0;
+        padding: 0;
+    }
+
     #splash {
         flex-direction: column;
         margin-top: 10vh;
