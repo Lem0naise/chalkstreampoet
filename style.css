@@ -15,12 +15,10 @@
 body {
     margin:0;
     padding:0;
-    /*background-color: var(--background);*/
 }
 html {
     margin:0;
 }
-
 
 #background {
     position: fixed;
@@ -30,44 +28,6 @@ html {
     object-fit: cover;
     filter:brightness(0.7);
     transition: filter 1s;
-}
-
-#splash {
-    position: absolute;
-    margin-top: 20vh;
-    margin-left: 10vw;
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    transition: opacity 0.5s;
-    opacity: 0;
-    gap:00px;
-}
-
-.option {
-    transition: opacity 0.5s, scale 0.5s;
-    font-size: 30px;
-    color: white;
-
-    text-align: center;
-    font-family: DIN, arial;
-    scale: 1;
-}
-.option:hover {
-    opacity: 0.5 !important;
-    scale: 1.05;
-}
-.option img {
-    border: solid 2px black;
-    padding: 20px;
-    border-radius: 300px;
-    filter: invert();
-}
-
-.option img{
-    max-width: 30vw;
-    max-height: 30vh;
 }
 
 #judges {
@@ -98,11 +58,12 @@ html {
 }
 
 #personal {
-    display: none;
+    display: flex;
     opacity: 0;
     transition: opacity 2s, left 0.5s;
-    width: 80vw;
+    width: 90vw;
     left: -100vw;
+    flex-wrap: wrap;
     translate: transform(-50%);
     display: flex;
     flex-direction: row;
@@ -119,59 +80,22 @@ html {
     width: 40vw;
     font-size: 20px;
     text-align: justify;
-}
-
-form {
-    display: inline;
-    margin-bottom: 40px;
-}
-label {
-    padding: 10px;
-    width: 100%;
-    background-color: #020202a2;
-    border-radius: 20px;
-    
-}
-textarea {
-    width: calc(100% - 18px);
-    font-family: 'Fira Sans', arial;
-}
-input, textarea {
-    padding: 15px;
-    border: 1px solid #1c87c9;
-    outline: none;
-}
-#submit_email {
-    width: calc(100% - 50px);
-    padding: 8px;
-    border: 1px solid #1c87c9;
-    outline: none;
+    z-index: 2;
     opacity: 1;
-    transition: opacity .5s;
-}
-#submit_email:hover{
-    opacity: 0.8;
 }
 
-#school {
-    display: none;
-    left: -100vw;
-    opacity: 0;
-    transition: opacity 0.5s, left 0.5s;
+#longlist {
+
 }
-
-
 .subdivider_p {
     font-family: "Cabin Sketch", arial;
     font-size: 80px;
     text-align: left;
 }
 .small {
-    margin: 30px;
+    margin: 20px;
 }
-.button:hover {
-    opacity: 0.7;
-}
+
 h2 {
     text-align: left;
 }
@@ -179,9 +103,7 @@ h2 {
     font-size: 15px;
     text-align: left !important;
 }
-#school_flip {
-    display: none;
-}
+
 
 @media only screen and (max-width: 900px) { 
     #judges div {
@@ -193,16 +115,12 @@ h2 {
         padding: 0;
     }
 
-    #splash {
-        flex-direction: column;
-        margin-top: 10vh;
-        gap: 50px;
-    }
+    
     .details {
         font-size: 13px;
     }
     #personal {
-        display: none;
+        display: flex;
         left: 5vw !important;
         flex-direction: column;
     }
